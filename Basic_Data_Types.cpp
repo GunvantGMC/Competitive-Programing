@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 
 using namespace std;
-// Basic Data Types
+// Basic Data Types CPP Code
 int main()
 {
     int a;
