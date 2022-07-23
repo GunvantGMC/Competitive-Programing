@@ -5,9 +5,8 @@ using namespace std;
 int main()
 {
 
-    int no;
-    cin >> no;
-    cout
-        << no * no;
+    int num;
+    cin >> num;
+    cout << num * num;
     return 0;
 }
