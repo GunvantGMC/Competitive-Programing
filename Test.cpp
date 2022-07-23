@@ -5,6 +5,9 @@ using namespace std;
 int main()
 {
     // Code Here
-    cout << 100;
+    int no;
+    cin >> no;
+    cout
+        << no * no;
     return 0;
 }
