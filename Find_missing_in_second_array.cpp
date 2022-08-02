@@ -4,9 +4,9 @@ using namespace std;
 
 // } Driver Code Ends
 
-const int K = (1e7 + 10);
-int hshP[K];
-int hshN[K];
+// const int K = (1e7 + 10);
+// int hshP[K];
+// int hshN[K];
 class Solution
 {
 
@@ -16,12 +16,8 @@ public:
     {
 
         vector<long long> g1;
-        for (int j = 0; j < K; j++)
-        {
-            hshP[j] = 0;
-            hshN[j] = 0;
-        }
-
+        unordered_map<int, int> hshP;
+        unordered_map<int, int> hshN;
         for (int i = 0; i < M; i++)
         {
 
