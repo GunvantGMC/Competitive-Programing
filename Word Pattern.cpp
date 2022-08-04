@@ -25,9 +25,10 @@ public:
     bool wordPattern(string pattern, string s)
     {
 
-        string st1[3000], fin = "";
+        string st1[3000] = {};
+        string fin = "";
         int t = s.length(), k = 0;
-        if (myCmp(pattern, s))
+        if (myCmp(pattern, s) && s.length() < 1)
             return true;
 
         string temp = "";
@@ -59,6 +60,16 @@ public:
                             return false;
                         }
                     }
+                    if (k - 1 > 0)
+                        if (myCmp(st1[k], st1[k - 2]))
+                        {
+
+                            if (!(myCmp(string(1, pattern[k]), string(1, pattern[k - 2]))))
+                            {
+
+                                return false;
+                            }
+                        }
                 }
 
                 k++;
@@ -67,10 +78,13 @@ public:
             else
                 temp += string(1, s[i]);
         }
-
-        for (int i = 0; i <= st1->length(); i++)
+        // cout << st1["dog"];
+        for (int i = 0; i < pattern.length(); i++)
         {
-
+            // cout << "Pat : " << pattern[i];
+            // cout << "\t Hsh : " << hsh[pattern[i]] << endl;
+            if (hsh[pattern[i]] == -1)
+                return false;
             fin += st1[hsh[pattern[i]]];
             if (i < (pattern.length() - 1))
                 fin += " ";
