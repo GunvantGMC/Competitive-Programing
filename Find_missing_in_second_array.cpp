@@ -17,24 +17,24 @@ public:
 
         vector<long long> g1;
         unordered_map<int, int> hshP;
-        unordered_map<int, int> hshN;
+        // unordered_map<int, int> hshN;
         for (int i = 0; i < M; i++)
         {
 
-            if (B[i] >= 0)
-                hshP[B[i]]++;
-            else
-                hshN[(B[i] * -1)]++;
+            // if (B[i] >= 0)
+            hshP[B[i]]++;
+            // else
+            //     hshN[(B[i] * -1)]++;
         }
 
         for (int j = 0; j < N; j++)
         {
             long long num = A[j];
             bool exists = 0;
-            if (num >= 0)
-                exists = hshP[A[j]] == 0;
-            else
-                exists = hshN[(A[j] * -1)] == 0;
+            // if (num >= 0)
+            exists = hshP[A[j]] == 0;
+            // else
+            //     exists = hshN[(A[j] * -1)] == 0;
 
             if (exists)
                 g1.push_back(num);
