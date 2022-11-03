@@ -1,0 +1,1 @@
+{"name":"Local: ToggleValues","url":"d:\\Work_Space\\Projects\\Competitive Programing\\ToggleValues.py","tests":[{"id":1667453085210,"input":"2\n2\n11\n4\n0010","output":"2\n3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Work_Space\\Projects\\Competitive Programing\\ToggleValues.py","group":"local","local":true}
