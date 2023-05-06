@@ -1,0 +1,1 @@
+{"name":"Local: quicksort","url":"d:\\Work_Space\\Projects\\Competitive Programing\\quicksort.py","tests":[{"id":1678189901859,"input":"5\n3 5 1 4 2","output":"1 2 3 4 5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Work_Space\\Projects\\Competitive Programing\\quicksort.py","group":"local","local":true}
