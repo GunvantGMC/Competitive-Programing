@@ -23,15 +23,17 @@ isSuccess=False
     
     
 for q in data:    
+    optionList = []
     for option in q:
         if(option == "ans"):
             break
         if(option == "que"):
             print("{}".format(q[option]))
         else:
-            print("{} : {}".format(option,q[option]))
+            print("{} : {}".format(option,q[option]))   
+            optionList.append(option)         
     choice = input("Your Ans : ")
-    if choice not in ["a", "b", "c", "d"]:
+    if choice not in optionList:
         print("Unknown Option")
         isSuccess=False
         break
