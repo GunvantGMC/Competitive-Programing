@@ -26,7 +26,10 @@ for q in data:
     for option in q:
         if(option == "ans"):
             break
-        print("{} : {}".format(option,q[option]))
+        if(option == "que"):
+            print("{}".format(q[option]))
+        else:
+            print("{} : {}".format(option,q[option]))
     choice = input("Your Ans : ")
     if choice not in ["a", "b", "c", "d"]:
         print("Unknown Option")
