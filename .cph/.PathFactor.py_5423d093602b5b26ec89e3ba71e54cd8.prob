@@ -1,0 +1,1 @@
+{"name":"Local: PathFactor","url":"d:\\Work_Space\\Projects\\Competitive Programing\\PathFactor.py","tests":[{"id":1701619574699,"input":"10\n5","output":"0"},{"id":1701619598973,"input":"10\n3","output":"5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Work_Space\\Projects\\Competitive Programing\\PathFactor.py","group":"local","local":true}

@@ -1,9 +1,12 @@
-def fu(n):
-    if(n == 1):
-        return 1
-    else:
-        return (n+fu(n-1))
+# def fu(n):
+#     if(n == 1):
+#         return 1
+#     else:
+#         return (n+fu(n-1))
 
+
+for i in [22,345,79,89,74,73,99,19] :
+    print(i, i%10)
 
 # print(fu(5))
 
